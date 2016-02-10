@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBPD WS2015/16</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" >
+    <script src="../../../libraries/jquery-2.2.0.js"></script>
+    <script src="../../js/layout.js"></script>
+    <script src="../../js/ShowDatabase.js"></script>
+</head>
+<body id="bbpdPlayerDetail">
+
+<!-- Headline -->
+<div id="HeadLine">Webanwendungen im WS2015/16</div>
+
+<!-- NavigationBar -->
+<div id="NavigationBar">
+    <ul id="Navigation">
+        <li id="NavHome">
+            <a href="../home.html">Startseite</a>
+        </li>
+        <li id="NavBBPD">
+            <a href="bbpd.html" id="bbpdLink">Basketball Player Database</a>
+            <ul id="DropdownBBPDMenu">
+                <li>
+                    <a href="bbpd.html">BBPD</a>
+                </li>
+                <li>
+                    <a href="bbpd-player_entry.html">Spieler Anlegen</a>
+                </li>
+                <li>
+                    <a href="bbpd-player_detail.html">Meine Favoriten</a>
+                </li>
+                <li id="NavBBPDDesign">
+                    <a href="bbpd-design.html">Design-Vorgabe</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="../hsmannheim.html" >HS Mannheim</a>
+        </li>
+    </ul>
+</div>
+
+
+<div id="ContentContainer" class="bbpdDesign">
+    <div id="Content" class="bbpdBackground">
+        <div id="Navigator">
+            <div id="colum">
+                <a href="bbpd.html">
+                    <div class="options">
+                        <b> BBPD Home </b>
+                    </div>
+                </a>
+                <a href="bbpd-player_entry.html">
+                    <div class="options">
+                        <b> Spieler anlegen</b>
+                    </div>
+                </a>
+                <a href="bbpd-player_detail.html">
+                    <div class="options">
+                        <b> Meine Spieler</b>
+                    </div>
+                </a>
+                <a href="bbpd-design.html">
+                    <div class="options">
+                        <b>Design Vorgabe</b>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="headline" id="HeadlineForPlayerDetail">
+            <b>Meine Spieler</b>
+        </div>
+        <div id="favorites">
+            <table id="players">
+                <thead>
+                <tr id="tableMenu">
+                    <td colspan="4" id="allPlayers" class="BlueSelected">
+                        <div>
+                            <b>Alle Spieler</b>
+                        </div>
+                    </td>
+                    <td colspan="4" id="myFavorites" class="NotBlueSelected">
+                        <div>
+                            <b>Favoriten</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="tableHeader">
+                    <th class="bbpdTableContent"> Spieler </th>
+                    <th class="bbpdTableContent"> Team</th>
+                    <th class="bbpdTableContent"> Head Coach </th>
+                    <th class="bbpdTableContent"> Assistant Coach </th>
+                    <th class="bbpdTableContent"> Position </th>
+                    <th class="bbpdTableContent"> Aktiv </th>
+                    <th class="bbpdTableContent"> Nummer </th>
+                    <th class="bbpdTableContent"> Jahr </th>
+                </tr>
+                </thead>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

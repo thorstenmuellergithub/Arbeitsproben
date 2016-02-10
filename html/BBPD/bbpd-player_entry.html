@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBPD WS2015/16</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" >
+    <script src="../../../libraries/jquery-2.2.0.js"></script>
+    <script src="../../js/layout.js"></script>
+    <script src="../../js/CheckInput.js"></script>
+</head>
+<body id="bbpdPlayerEntry">
+
+<!-- Headline -->
+<div id="HeadLine">Webanwendungen im WS2015/16</div>
+
+<!-- NavigationBar -->
+<div id="NavigationBar">
+    <ul id="Navigation">
+        <li id="NavHome">
+            <a href="../home.html">Startseite</a>
+        </li>
+        <li id="NavBBPD">
+            <a href="bbpd.html" id="bbpdLink">Basketball Player Database</a>
+            <ul id="DropdownBBPDMenu">
+                <li>
+                    <a href="bbpd.html">BBPD</a>
+                </li>
+                <li>
+                    <a href="bbpd-player_entry.html">Spieler Anlegen</a>
+                </li>
+                <li>
+                    <a href="bbpd-player_detail.html">Meine Favoriten</a>
+                </li>
+                <li id="NavBBPDDesign">
+                    <a href="bbpd-design.html">Design-Vorgabe</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="../hsmannheim.html" >HS Mannheim</a>
+        </li>
+    </ul>
+</div>
+
+
+<div id="ContentContainer" class="bbpdDesign">
+    <div id="Content" class="bbpdBackground">
+        <div id="Navigator">
+            <div id="colum">
+                <a href="bbpd.html">
+                    <div class="options">
+                        <b> BBPD Home</b>
+                    </div>
+                </a>
+                <a href="bbpd-player_entry.html">
+                    <div class="options">
+                        <b> Spieler anlegen</b>
+                    </div>
+                </a>
+                <a href="bbpd-player_detail.html">
+                    <div class="options">
+                        <b> Meine Spieler</b>
+                    </div>
+                </a>
+                <a href="bbpd-design.html">
+                    <div class="options">
+                        <b>Design Vorgabe</b>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="headline" id="HeadlineForCreatePlayer">
+            <b>Spieler anlegen</b>
+        </div>
+
+        <div id="formularContainer">
+            <form id="formular" name="formular">
+                <label for="name" class="createPlayer">
+                    <b>Name</b>
+                    <input type="text" name="name" id="name" placeholder="Name" class="input" />
+                </label>
+                <label for="vorname" class="createPlayer">
+                    <b>Vorname</b>
+                    <input type="text" name="vorname" id="vorname" placeholder="Vorname" class="input"/>
+                </label>
+                <label for="verein" class="createPlayer">
+                    <b>Verein</b>
+                    <input type="text" name="verein" id="verein" placeholder="Verein" class="input" />
+                </label>
+                <label for="hcoach" class="createPlayer">
+                    <b>Headcoach</b>
+                    <input type="text" name="hcoach" id="hcoach" placeholder="Headcoach" class="input" />
+                </label>
+                <label for="acoach" class="createPlayer">
+                    <b>Assistant Coach</b>
+                    <input type="text" name="acoach" id="acoach" placeholder="Assistent Coach" class="input" />
+                </label>
+                <label for="number" class="createPlayer">
+                    <b>Trikotnummer</b>
+                    <input type="text" name="number" id="number" placeholder="XX" class="input" />
+                </label>
+                <label for="jahr" class="createPlayer">
+                    <b>Jahrgang</b>
+                    <input type="text" name="jahr" id="jahr" placeholder="YYYY" class="input" />
+                </label>
+                <label for="aktiv" class="createPlayer">
+                    <b>Aktiv</b>
+                    <input type="checkbox" name="aktiv" value="aktiv" id="aktiv"  />
+                    <b id="isaktiv">Ja</b>
+                    <input type="checkbox" name="aktiv" value="nichtaktiv" id="nichtaktiv" checked />
+                    <b id="isnotaktiv">Nein</b>
+                </label>
+                <label for="position" class="createPlayer">
+                    <b>Position</b>
+                    <select name="position" id="position" class="input">
+                        <option value="Center">Center </option>
+                        <option value="Guard">Guard </option>
+                        <option value="Power Forward">Power Forward </option>
+                        <option value="Wing" selected>Wing</option>
+                        <option value="Small Forward">Small Forward </option>
+                    </select>
+                </label>
+                <label for="favorit" class="createPlayer" id="favoritfield">
+                    <b>Als Favorit markieren</b>
+                    <input type="checkbox" name="favorit" id="favorit" />
+                </label>
+                <input type="button" id="button" value="Spieler Speichern" />
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

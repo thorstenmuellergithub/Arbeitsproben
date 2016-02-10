@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgba(255,255,255,1.0);
+    margin: 0;
+    height:100%;
+    width: 100%;
+}
+
+#HeadLine{
+    background-color: rgba(255,255,255, 0.3);
+    width:100%;
+    height: 7%;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left: 3%;
+}
+/* ScrollDown Function - NavigationBar */
+.fixed {
+    position: fixed;
+    top: 0;
+}
+.move{
+    margin-top: 2%;
+}
+/*Navigationbar*/
+#NavigationBar{
+    background-color: lightgray;
+    width: 100%;
+    height: 4.23%;
+}
+#NavigationBar ul{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+}
+#NavigationBar li{
+    float:left;
+    text-align:center;
+    height: 100%;
+
+}
+#NavigationBar li > a {
+    display:block;
+    color:black;
+    text-decoration: none;
+    font-weight:bold;
+    padding: 11px 4px 0 4px;
+    height:100%;
+    width: 100%;
+}
+#NavigationBar li > a:hover{
+    background-color: chocolate;
+}
+/* Dropdown Container*/
+#NavBBPD{
+    position:relative;
+    display:inline-block;
+}
+/*Dropdown List*/
+#DropdownBBPDMenu{
+    position:absolute;
+    display:none;
+    background-color: lightgray;
+    min-width:513px;
+}
+/* Show the dropdown menu on hover*/
+#NavBBPD:hover #DropdownBBPDMenu {
+    display: block;
+}
+/* Highlight the actually page*/
+#Home #NavHome a{
+    border-bottom: 4px solid chocolate;
+    padding-bottom: 6px;
+}
+#bbpd #NavBBPD a#bbpdLink{
+    border-bottom: 4px solid chocolate;
+    padding-bottom:6px;
+}
+#bbpdDesign #NavBBPD a#bbpdLink{
+    border-bottom: 4px solid chocolate;
+    padding-bottom:6px;
+}
+#bbpdPlayerEntry #NavBBPD a#bbpdLink{
+    border-bottom: 4px solid chocolate;
+    padding-bottom:6px;
+}
+#bbpdPlayerDetail #NavBBPD a#bbpdLink{
+    border-bottom: 4px solid chocolate;
+    padding-bottom:6px;
+}
+#HSMannheim #NavHSMA a{
+    border-bottom: 4px solid chocolate;
+    padding-bottom:6px;
+}
+
+
+.bbpdDesign{
+    background-color: rgba(0,162,232,1.0);
+
+}
+#Content{
+    padding-top:2%;
+    padding-bottom: 2%;
+    min-height:850px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width:60%;
+    height: 100%;
+}
+.bbpdBackground{
+    background-color: rgba(153,217,234,1.0);
+}
+span{
+    color: rgba(136,0,21,1.0);
+}
+
+.headline{
+    font-size: 22px;
+    text-align: center;
+}
+#HeadlineForCreatePlayer, #HeadlineForPlayerDetail, #HeadlineForDesignPattern{
+    font-size: 24px;
+    color: rgba(75,47,37,1.0);
+}
+#image{
+    width: auto;
+    height: auto;
+    align-content: center;
+    margin: 2% 34% 2% 34%;
+}
+#Navigator{
+    margin-bottom: 3%;
+}
+.options{
+    height: 64px;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 18px;
+    background-color:rgba(0,162,232,1.0);
+    border: solid 5px rgba(63,72,204,1.0);
+}
+.options:hover{
+    background-color: rgba(63,72,204,1.0);
+}
+#Navigator a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Für die Startseite */
+#createPlayer, #seeFavorites, #register{
+    width: 30%;
+    margin: 0 35%;
+    padding-top: 1%;
+}
+
+#colum{
+    -moz-column-count: 4;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 0px;
+}
+
+/* Formular */
+form#formular{
+    max-width: 33%;
+    margin-left: 10%;
+    margin-right: 50%;
+    margin-top: 7%;
+}
+.createPlayer{
+    width:100%;
+    display:block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 16px;
+    color: black;
+}
+.description{
+    width: 30%;
+    max-width: 30%;
+}
+.input{
+    border-radius: 5px;
+    float: right;
+    width: 55%;
+
+}
+input{
+    border: 1px solid black;
+}
+input#aktiv{
+    margin-left: 32%;
+}
+input#nichtaktiv{
+    margin-left: 23%;
+}
+#favoritfield{
+    width:10%;
+    margin-top: -13%;
+    margin-left: 25%;
+    position:absolute;
+    z-index:99;
+}
+#favorit{
+    margin-top: 1%;
+}
+input#button{
+    border: none;
+}
+input#button:hover{
+    box-shadow: 0 17px 30px 0 rgba(0,0,0,0.5);
+}
+
+/* Tabelle */
+table#players{
+    width: 95%;
+    margin: 7.5% 2.5%;
+    table-layout: fixed;
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+#tableMenu{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.bbpdTableContent{
+    height: 45px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.visible{
+    visibility: visible;
+}
+.notVisible{
+    display: none;
+}
+.BlueSelected{
+    color: #FFFFFF;
+    background-color: rgba(0,38,255,1);
+    cursor: hand;
+}
+
+/*Design Vorgabe Galerie*/
+.bbpdGalery{
+    border: 1px solid black;
+    margin: 2.5% 0.6%;
+}
+
+
+#LeftContainer{
+    width:13%;
+    float:left;
+    position:fixed;
+    padding-top: 0.5%;
+}
+#LeftContainer > ul{
+    padding: 0;
+}
+#LeftContainer ul>li{
+    clear:left;
+    list-style-type: none;
+}
+#RightContainer{
+    width:80%;
+    float:right;
+    border-left: 1px solid lightgray;
+    padding-left: 5%;
+}
+.showPosition{
+    margin: 4% 0;
+}
+/*Markiere aktuelle Position*/
+.highlightTitle{
+    font-weight: bold;
+    color: darkblue;
+}
+#HSMA{
+    margin-bottom: 5%;
+}
+#Picture01{
+    margin: 0 31%;
+}
+#Picture02{
+    margin: 1% 7.2%;
+}
+
+/*Div Container in HSMA*/
+#ZahlenFaktenContainer, #Fakultäten, #InformatikBeschreibung{
+    width: 100%;
+    padding: 7% 0;
+    border-top: 1px solid lightgray;
+}
+/*Tabelle auf HS Mannheim*/
+table#ZahlenFakten {
+    width:100%;
+    table-layout: fixed;
+    border: 0;
+    border-collapse: collapse;
+}
+table#ZahlenFakten th,td{
+    padding: 1% 0;
+    border:0;
+    margin:0;
+}
+/*Jede 2. Zeile eine andere Farbe*/
+.Line0{
+    background-color: lightgray;
+}
+#Fakultäten > ul{
+    margin-left: 1.9%;
+}
+#Fakultäten ul>li{
+    clear:left;
+    list-style-type: disc;
+}
+#InformatikBeschreibung{
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
